@@ -6,8 +6,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    margin-left: 10px;
-    margin-right: 10px;
     color: #426331;
 }
 
@@ -79,15 +77,14 @@ a {
     font-size: 12px;
 }
 
-h2 , p {
- margin-left: 50px;
- margin-right: 25px;
+h2,
+p {
+    padding: 0 50px;
 }
 
 p {
     font-size: 12px;
     text-align: left;
-    margin-bottom: 25px;
 }
 
 /* pc
@@ -102,8 +99,17 @@ p {
 header,
 footer {
     background-color: #FFF0B4;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
 
 /* text */
 .h1-title {
@@ -435,12 +441,12 @@ footer {
         margin-left: 10px;
     }
 
-    a{
+    a {
         font-size: 16px;
     }
 }
 
-@media screen and (min-width: 1201px) and  (max-width:3600px) {
+@media screen and (min-width: 1201px) and (max-width:3600px) {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
@@ -454,13 +460,17 @@ footer {
         margin-bottom: 50px;
     }
 
+    .container{
+        margin-bottom: 100px;
+    }
+
     .flex-elemet {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px;
         flex-direction: row;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .mg {
@@ -513,7 +523,11 @@ footer {
         margin-left: 10px;
     }
 
-    a{
+    a {
         font-size: 16px;
+    }
+
+    .custom-mg-top{
+        margin-top: -150px;
     }
 }
