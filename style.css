@@ -234,8 +234,8 @@ footer {
 }
 
 .checkbox {
-    height: 20px;
-    width: 40px;
+    height: 15px;
+    width: 30px;
     background: #222;
     appearance: none;
     border-radius: 120px;
@@ -249,8 +249,8 @@ footer {
 }
 
 .checkbox::before {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -272,7 +272,7 @@ footer {
 }
 
 .checkbox:checked::before {
-    left: 20px;
+    left: 15px;
     box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1),
         inset 4px 4px rgba(255, 255, 255, 1),
         inset -4px 4px rgba(255, 255, 255, 1);
