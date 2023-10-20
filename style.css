@@ -65,20 +65,12 @@ p {
     text-align: left;
 }
 
-/* pc
-p {
-    font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    margin-bottom: 50px;
-} */
-
 
 header,
 footer {
     background-color: #FFF0B4;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 header {
@@ -89,12 +81,17 @@ header {
     margin-bottom: 25px;
 }
 
+.main {
+    padding-bottom: 50px;
+}
+
 
 /* text */
 .h1-title {
     padding-top: 30px;
     margin-bottom: 10px;
 }
+
 
 .title-text {
     position: absolute;
@@ -108,7 +105,7 @@ header {
 
 /* text */
 
-.icon{
+.icon {
     max-width: 15px;
     max-height: 15px;
 }
@@ -138,8 +135,8 @@ header {
 .plate {
     float: right;
     /* position: realative; */
-    width: clamp(100px, 50%, 300px);
-    height: clamp(100px, 50%, 300px);
+    width: clamp(150px, 50%, 300px);
+    height: clamp(150px, 50%, 300px);
 }
 
 
@@ -153,23 +150,26 @@ header {
 
 .logo {
     margin-top: 5px;
-    width: clamp(10px, 100%, 100px);
+    width: clamp(100px, 50%, 100px);
+    height: clamp(100px, 50%, 100px);
 }
 
-.theme{
+.theme {
     width: 15px;
     height: 15px;
 }
 
 /* pictures */
 
-.mg{
+.mg {
     margin-bottom: 50px;
 }
+
 /* flex */
 .flex-box-col {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .flex-elemet {
@@ -282,7 +282,7 @@ header {
 
 }
 
-.icons{
+.icons {
     position: absolute;
     display: flex;
     align-items: center;
@@ -291,22 +291,6 @@ header {
     gap: 8px;
     padding: 2px 0 0 0;
 }
-
-/* .checkbox::after {
-    content: "";
-    position:absolute;
-    background-color: black;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
-}
-
-.checkbox:checked::after {
-    background: white;
-}  */
-
 
 @media screen and (min-width: 481px) and (max-width:768px) {
     h1 {
@@ -330,7 +314,7 @@ header {
         width: clamp(10px, 100%, 150px);
     }
 
-    .main{
+    .main {
         margin-bottom: 20px;
     }
 }
@@ -376,35 +360,35 @@ header {
         align-items: center;
     }
 
-    .checkbox{
+    .checkbox {
         height: 30px;
         width: 60px;
     }
 
-    .checkbox::before{
+    .checkbox::before {
         height: 30px;
         width: 30px;
     }
 
-    .checkbox:checked::before{
+    .checkbox:checked::before {
         left: 30px;
     }
-    
-    .theme{
+
+    .theme {
         height: 20px;
         width: 20px;
     }
 
-    .icons{
+    .icons {
         gap: 17px;
         padding: 5px 0 0 0;
     }
 
-    .all{
+    .all {
         display: block;
     }
 
-    .main{
+    .main {
         margin-bottom: 50px;
     }
 }
@@ -423,6 +407,12 @@ header {
         margin-bottom: 50px;
     }
 
+    header,
+    footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
     .flex-elemet {
         display: flex;
         align-items: flex-start;
@@ -432,7 +422,9 @@ header {
         margin-bottom: 50px;
     }
 
-    .icon{
+
+
+    .icon {
         max-width: 25px;
         max-height: 25px;
     }
@@ -492,44 +484,44 @@ header {
         font-size: 16px;
     }
 
-    .checkbox{
+    .checkbox {
         height: 30px;
         width: 60px;
     }
 
-    .checkbox::before{
+    .checkbox::before {
         height: 30px;
         width: 30px;
     }
 
-    .checkbox:checked::before{
+    .checkbox:checked::before {
         left: 30px;
     }
-    
-     .theme{
+
+    .theme {
         height: 20px;
         width: 20px;
     }
 
-    .icons{
+    .icons {
         gap: 17px;
         padding: 5px 0 0 0;
     }
 
-    .all{
+    .all {
         display: block;
     }
 
-    .main{
+    .main {
         padding: 0 25px;
     }
 }
 
-@media screen and (min-width: 1201px) and (max-width:3600px) {
+@media screen and (min-width: 1201px) and (max-width:1440px) {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
-        font-size: 100px;
+        font-size: 80px;
         text-align: left;
         margin-bottom: 10px;
     }
@@ -539,11 +531,17 @@ header {
         margin-bottom: 50px;
     }
 
-    .container{
+    header,
+    footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .container {
         margin-bottom: 100px;
     }
 
-    .icon{
+    .icon {
         max-width: 25px;
         max-height: 25px;
     }
@@ -611,35 +609,162 @@ header {
         font-size: 16px;
     }
 
-    .checkbox{
+    .checkbox {
         height: 30px;
         width: 60px;
     }
 
-    .checkbox::before{
+    .checkbox::before {
         height: 30px;
         width: 30px;
     }
 
-    .checkbox:checked::before{
+    .checkbox:checked::before {
         left: 30px;
     }
-    
-    .theme{
+
+    .theme {
         height: 20px;
         width: 20px;
     }
 
-    .icons{
+    .icons {
         gap: 17px;
         padding: 5px 0 0 0;
     }
 
-    .all{
+    .all {
         display: block;
     }
 
-    .main{
+    .main {
+        margin-bottom: 50px;
+        padding: 0 25px;
+    }
+
+}
+
+@media screen and (min-width: 1401px) and (max-width:3600px) {
+    h1 {
+        margin-top: 10px;
+        margin-left: 50px;
+        font-size: 80px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 31px;
+        margin-bottom: 50px;
+    }
+
+    header,
+    footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .container {
+        margin-bottom: 100px;
+    }
+
+    .icon {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    .flex-elemet {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .mg {
+        margin-left: 100px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+        padding: 0 50px 0 0;
+    }
+
+    .logo {
+        margin-top: 5px;
+        width: clamp(10px, 100%, 257px);
+    }
+
+    .contact-end {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .plate {
+        float: right;
+        position: realative;
+        width: clamp(100px, 50%, 500px);
+        height: clamp(100px, 50%, 500px);
+    }
+
+    .flex-box {
+        margin-bottom: 50px;
+    }
+
+    header {
+        min-height: 80px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .checkbox {
+        height: 30px;
+        width: 60px;
+    }
+
+    .checkbox::before {
+        height: 30px;
+        width: 30px;
+    }
+
+    .checkbox:checked::before {
+        left: 30px;
+    }
+
+    .theme {
+        height: 20px;
+        width: 20px;
+    }
+
+    .icons {
+        gap: 17px;
+        padding: 5px 0 0 0;
+    }
+
+    .all {
+        display: block;
+    }
+
+    .main {
         margin-bottom: 50px;
         padding: 0 25px;
     }
