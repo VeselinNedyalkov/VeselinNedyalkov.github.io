@@ -529,6 +529,7 @@ header {
     h2 {
         font-size: 31px;
         margin-bottom: 50px;
+        padding: 0;
     }
 
     header,
@@ -656,6 +657,7 @@ header {
     h2 {
         font-size: 31px;
         margin-bottom: 50px;
+        padding: 0;
     }
 
     header,
