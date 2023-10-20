@@ -399,6 +399,21 @@ header {
         justify-content: space-between;
         align-items: center;
     }
+
+    .checkbox{
+        height: 30px;
+        width: 60px;
+    }
+
+    .checkbox::before{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .icons{
+        height: 30px;
+        width: 30px;
+    }
 }
 
 @media screen and (min-width: 1025px) and (max-width:1200px) {
