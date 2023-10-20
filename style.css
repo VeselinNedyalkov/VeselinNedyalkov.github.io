@@ -280,6 +280,7 @@ header {
     top: 0;
     left: 0;
     content: "";
+    z-index: 2;
     background: linear-gradient(to bottom, #444, #222);
     border-radius: 120px;
     transform: scale(0.9);
@@ -306,10 +307,13 @@ header {
 }
 
 .icons{
+    position: absolute;
     display: flex;
     align-items: center;
+    z-index: 1;
     justify-content: space-between;
-    margin-bottom: 5px;
+    gap: 8px;
+    padding: 2px 0 0 0;
 }
 
 /* .checkbox::after {
