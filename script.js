@@ -1,17 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
 
-    const checkbox = document.getElementById("myCheckbox");
-    const targetElement = document.getElementById("targetElement");
+function toggleDarkMode() {
+    const checkbox = document.getElementById('myCheckbox');
+    const body = document.body;
+    body.classList.toggle('dark-mode', checkbox.checked);
+}
 
-    
-    checkbox.addEventListener("change", function() {
-        
-        if (checkbox.checked) {
-            
-            targetElement.style.backgroundColor = "#222";
-        } else {
-            
-            targetElement.style.backgroundColor = "";
-        }
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    const checkbox = document.getElementById('myCheckbox');
+    checkbox.addEventListener('change', toggleDarkMode);
 });

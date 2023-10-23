@@ -3,16 +3,42 @@
     padding: 0px;
 }
 
+:root {
+    /* collors:light theme */
+    --color-text: #426331;
+    --p-clr:#426331;
+    --h2-h3-clr: #E0B500;
+    --footer-header-bgClr: #FFF0B4;
+    --bg-clr: #f0ecec;
+    --mb-50: 50px;
+
+    /* fornt-size */
+    --h1-to-480-size: 22px;
+    --h1-to-768px-size: 36px;
+    --h1-to-1024px-size: 52px;
+    --h1-to-1200px-size: 70px;
+    --h1-to-max-size: 80px;
+
+    --min-font-size: 12px;
+}
+
+/* collors:dark theme */
+.dark-mode {
+    --p-clr: #75b158;
+    --bg-clr: #222;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: #426331;
+    color: var(--color-text);
+    background-color: var(--bg-clr);
 }
 
 
 
 h1 {
-    font-size: 22px;
+    font-size: var(--h1-to-480-size);
 }
 
 
@@ -23,7 +49,7 @@ h2 {
 
 
 h3 {
-    font-size: 12px;
+    font-size: var(--min-font-size);
 }
 
 h1,
@@ -35,24 +61,17 @@ h3 {
 
 h3,
 h2 {
-    color: #E0B500;
+    color: var(--h2-h3-clr);
 }
 
 h4 {
-    font-size: 12px;
+    font-size: var(--min-font-size);
 }
 
 
 h5 {
-    font-size: 12px;
+    font-size: var(--min-font-size);
     margin-bottom: 5px;
-}
-
-a {
-    text-decoration: none;
-    text-decoration: underline;
-    color: #426331;
-    font-size: 12px;
 }
 
 h2,
@@ -61,14 +80,18 @@ p {
 }
 
 p {
-    font-size: 12px;
+    font-size: var(--min-font-size);
     text-align: left;
+}
+
+h1 , p{
+    color: var(--p-clr);
 }
 
 
 header,
 footer {
-    background-color: #FFF0B4;
+    background-color: var(--footer-header-bgClr);
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -124,7 +147,7 @@ header {
     display: flex;
     align-self: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: var(--mb-50);
 }
 
 /* pictures */
@@ -145,7 +168,7 @@ header {
     align-self: center;
     width: clamp(100px, 60%, 200px);
     height: clamp(100px, 60%, 200px);
-    margin-bottom: 50px;
+    margin-bottom: var(--mb-50);
 }
 
 .logo {
@@ -162,7 +185,7 @@ header {
 /* pictures */
 
 .mg {
-    margin-bottom: 50px;
+    margin-bottom: var(--mb-50);
 }
 
 /* flex */
@@ -294,7 +317,7 @@ header {
 
 @media screen and (min-width: 481px) and (max-width:768px) {
     h1 {
-        font-size: 36px;
+        font-size: var(--h1-to-768px-size);
     }
 
     h2 {
@@ -321,7 +344,7 @@ header {
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
     h1 {
-        font-size: 52px;
+        font-size: var(--h1-to-1024px-size);
     }
 
     h2 {
@@ -335,7 +358,7 @@ header {
         justify-content: flex-start;
         gap: 20px;
         flex-direction: row;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     h3 {
@@ -345,7 +368,7 @@ header {
 
     p {
         font-size: 20px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     .logo {
@@ -397,14 +420,14 @@ header {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
-        font-size: 70px;
+        font-size: var(--h1-to-1200px-size);
         text-align: left;
         margin-bottom: 10px;
     }
 
     h2 {
         font-size: 31px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     header,
@@ -419,7 +442,7 @@ header {
         justify-content: flex-start;
         gap: 20px;
         flex-direction: row;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
 
@@ -440,11 +463,11 @@ header {
 
 
     p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
         text-align: left;
         margin-right: 25px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     .logo {
@@ -467,12 +490,12 @@ header {
     }
 
     .flex-box {
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     header {
         min-height: 80px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     h4 {
@@ -521,14 +544,14 @@ header {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
-        font-size: 80px;
+        font-size: var(--h1-to-max-size);
         text-align: left;
         margin-bottom: 10px;
     }
 
     h2 {
         font-size: 31px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
         padding: 0;
     }
 
@@ -567,7 +590,7 @@ header {
 
 
     p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
         text-align: left;
         padding: 0 50px 0 0;
@@ -593,12 +616,12 @@ header {
     }
 
     .flex-box {
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     header {
         min-height: 80px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     h4 {
@@ -649,14 +672,14 @@ header {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
-        font-size: 80px;
+        font-size: var(--h1-to-max-size);
         text-align: left;
         margin-bottom: 10px;
     }
 
     h2 {
         font-size: 31px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
         padding: 0;
     }
 
@@ -695,7 +718,7 @@ header {
 
 
     p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 24px;
         text-align: left;
         padding: 0 50px 0 0;
@@ -721,12 +744,12 @@ header {
     }
 
     .flex-box {
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     header {
         min-height: 80px;
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
     }
 
     h4 {
@@ -767,7 +790,7 @@ header {
     }
 
     .main {
-        margin-bottom: 50px;
+        margin-bottom: var(--mb-50);
         padding: 0 25px;
     }
 
