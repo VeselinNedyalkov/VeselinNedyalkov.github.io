@@ -109,8 +109,8 @@ header {
 select {
     background-color: var(--footer-header-bgClr);
     border: #222 solid 2px;
-    width: 60px;
-    height: 30px;
+    width: 45px;
+    height: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -402,6 +402,11 @@ select {
         align-items: center;
     }
 
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
     .checkbox {
         height: 30px;
         width: 60px;
@@ -524,6 +529,11 @@ select {
 
     a {
         font-size: 16px;
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
     }
 
     .checkbox {
@@ -653,6 +663,11 @@ select {
         font-size: 16px;
     }
 
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
     .checkbox {
         height: 30px;
         width: 60px;
@@ -780,6 +795,11 @@ select {
 
     a {
         font-size: 16px;
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
     }
 
     .checkbox {
