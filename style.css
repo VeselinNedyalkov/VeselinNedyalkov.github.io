@@ -6,11 +6,12 @@
 :root {
     /* collors:light theme */
     --color-text: #426331;
-    --p-clr:#426331;
+    --p-clr: #426331;
     --h2-h3-clr: #E0B500;
     --footer-header-bgClr: #FFF0B4;
     --bg-clr: #f0ecec;
     --mb-50: 50px;
+    --mb-p: 15px;
 
     /* fornt-size */
     --h1-to-480-size: 22px;
@@ -84,7 +85,8 @@ p {
     text-align: left;
 }
 
-h1 , p{
+h1,
+p {
     color: var(--p-clr);
 }
 
@@ -103,6 +105,16 @@ header {
     padding: 0 25px;
     margin-bottom: 25px;
 }
+
+select {
+    background-color: var(--footer-header-bgClr);
+    border: #222 solid 2px;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 
 .main {
     padding-bottom: 50px;
@@ -188,11 +200,19 @@ header {
     margin-bottom: var(--mb-50);
 }
 
+
+
+
 /* flex */
 .flex-box-col {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+.topButtons {
+    display: flex;
+    gap: 15px;
 }
 
 .flex-elemet {
@@ -210,7 +230,6 @@ header {
     margin-right: 10px;
     margin-bottom: 25px;
 }
-
 
 
 .contact-end {
@@ -368,7 +387,7 @@ header {
 
     p {
         font-size: 20px;
-        margin-bottom: var(--mb-50);
+        margin-bottom: var(--mb-p);
     }
 
     .logo {
@@ -467,7 +486,7 @@ header {
         line-height: 24px;
         text-align: left;
         margin-right: 25px;
-        margin-bottom: var(--mb-50);
+        margin-bottom: var(--mb-p);
     }
 
     .logo {
@@ -594,6 +613,7 @@ header {
         line-height: 24px;
         text-align: left;
         padding: 0 50px 0 0;
+        margin-bottom: var(--mb-p);
     }
 
     .logo {
@@ -722,6 +742,7 @@ header {
         line-height: 24px;
         text-align: left;
         padding: 0 50px 0 0;
+        margin-bottom: var(--mb-p);
     }
 
     .logo {

@@ -27,11 +27,14 @@
                 <img class="logo" src="/Assets/Logo.webp" alt="Лого">
             </a>
         </div>
-        <div>
+        <div class="topButtons">
+            <div class="select">
+                <select name="language" id="languageSelector">
+                    <option value="bg">BG</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
             <div>
-                <div class="dropdown">
-                    
-                </div>
                 <div class="icons">
                     <img class="theme" src="/Assets/Icons/light.webp" alt="бяла тема">
                     <img class="theme" src="/Assets/Icons/dark.webp" alt="черна тема">
@@ -48,10 +51,12 @@
                 <img class="plate" src="/Assets/plate.webp" alt="Чиния">
                 <div class="h1-title">
                     <div class="title-text">
-                        <h1 clas="h1-top">Добре дошли <br>в нашият цех за <br>производство на салфетки</h1>
+                        <h1 class="h1-top" data-translation-key="topic-top">Добре дошли</h1>
+                        <h1 class="h1-top" data-translation-key="topic-mid">в нашият цех за</h1>
+                        <h1 class="h1-top" data-translation-key="topic-bot">производство на салфетки</h1>
                         <div class="flex-elemet">
-                            <h3>| Производство на салфетки |</h3>
-                            <h3>| Производство на хартиени чашки |</h3>
+                            <h3 data-translation-key="production">| Производство на салфетки |</h3>
+                            <h3 data-translation-key="production1">| Производство на хартиени чашки |</h3>
                         </div>
                     </div>
                 </div>
@@ -62,16 +67,18 @@
             <div class="flex-elemet mg custom-mg-top">
                 <img class="all" src="/Assets/Napkins/ALL.webp" alt="All together">
                 <div>
-                    <h2>Нашето производство:</h2>
-                    <p>Здравейте,
+                    <h2 data-translation-key="h2title">Нашето производство:</h2>
+                    <p data-translation-key="infoText">Здравейте,
                         Ние произвеждаме салфетки за :
                         ресторанти, кафенета, заведения за бързо хранене, хотели и вашите специални празници.
-                        Предлагаме салфетки с лого и без:
-                        <br><br> o Лукс: 1/4, 1/8 сгънати
-                        <br><br> o Размер: 33 х 33см – еднопластови
-                        <br><br> o Печатаме от 1 до 4 цвята
-                        <br><br>Можем да отпечатаме вашето лого. Пакетираме ги по 250, 500, 1000 или по желание на клиента.
-                        Качеството е
+                        Предлагаме салфетки с лого и без: </p>
+                    <p data-translation-key="infoText1"> o Лукс: 1/4, 1/8 сгънати </p>
+                    <p data-translation-key="infoText2"> o Размер: 33 х 33см – еднопластови </p>
+                    <p data-translation-key="infoText3"> o Печатаме от 1 до 4 цвята </p>
+                    <p data-translation-key="infoText4">Можем да отпечатаме вашето лого. Пакетираме ги по 250, 500,
+                        1000
+                        или по желание на
+                        клиента. Качеството е
                         приоритет за нас! Не се колебайте да ни пишете за въпроси или да ви изпратим мостри.
                         Търсим дистрибутори, складове на едро и търговци в цялата страна.
                         Ние ще изготвим индивидуална оферта, съобразена с Вашето желание.
@@ -94,7 +101,7 @@
 
     <footer class="contact-end">
         <div>
-            <h4>Контакти:</h4>
+            <h4 data-translation-key="contact">Контакти:</h4>
         </div>
         <div class="facebook">
             <div>
@@ -108,7 +115,7 @@
         <div class="telephone-end">
             <img src="/Assets/Icons/icons8-telephone-100.webp" alt="телефон">
             <div>
-                <h5>Тел. за връзка:</h5>
+                <h5 data-translation-key="tel">Тел. за връзка:</h5>
                 <h5>+359 898 836687</h5>
                 <h5>+359 898 623108</h5>
             </div>
@@ -119,7 +126,11 @@
         </div>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.6.0/i18next.min.js"
+        integrity="sha512-pKYD1vow2/8ESUSsyoyy8jOiHVZxj2inqyN4CFP69hxBVK16nm0+04v0nqTY2Futspb7hIBAAkP/m8bcuCkKUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer type="module" src="translation.js"></script>
+    <script defer src="script.js"></script>
 </body>
 
 </html>
