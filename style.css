@@ -20,7 +20,7 @@
     --h1-to-1200px-size: 70px;
     --h1-to-max-size: 80px;
 
-    --min-font-size: 12px;
+    --min-font-size: 14px;
 }
 
 /* collors:dark theme */
@@ -77,7 +77,7 @@ h5 {
 
 h2,
 p {
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 p {
@@ -94,8 +94,6 @@ p {
 header,
 footer {
     background-color: var(--footer-header-bgClr);
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 header {
@@ -454,11 +452,6 @@ select {
         margin-bottom: var(--mb-50);
     }
 
-    header,
-    footer {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 
     .flex-elemet {
         display: flex;
@@ -477,7 +470,7 @@ select {
     }
 
     .mg {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     h3 {
@@ -584,12 +577,6 @@ select {
         padding: 0;
     }
 
-    header,
-    footer {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
     .container {
         margin-bottom: 100px;
     }
@@ -609,7 +596,7 @@ select {
     }
 
     .mg {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     h3 {
@@ -718,12 +705,6 @@ select {
         padding: 0;
     }
 
-    header,
-    footer {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
     .container {
         margin-bottom: 100px;
     }
@@ -743,7 +724,7 @@ select {
     }
 
     .mg {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     h3 {
