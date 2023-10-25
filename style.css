@@ -23,6 +23,8 @@
     --min-font-size: 14px;
 }
 
+
+
 /* collors:dark theme */
 .dark-mode {
     --p-clr: #75b158;
@@ -113,6 +115,12 @@ select {
     height: 20px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.topButtons {
+    border-right: var(--p-clr) double 2px;
+    border-left: var(--p-clr) double 2px;
+    border- padding: 5px;
 }
 
 
