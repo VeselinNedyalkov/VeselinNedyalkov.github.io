@@ -700,7 +700,7 @@ select {
 
 }
 
-@media screen and (min-width: 1401px) and (max-width:3600px) {
+@media screen and (min-width: 1401px) {
     h1 {
         margin-top: 10px;
         margin-left: 50px;
