@@ -19,7 +19,7 @@
     --h1-to-1024px-size: 52px;
     --h1-to-1200px-size: 70px;
     --h1-to-max-size: 90px;
-
+    --brightness: brightness(1);
     --min-font-size: 14px;
 }
 
@@ -29,6 +29,7 @@
 .dark-mode {
     --p-clr: #75b158;
     --bg-clr: #222;
+    --brightness: brightness(70%);
 }
 
 body {
@@ -177,6 +178,7 @@ select {
 
 .plate {
     float: right;
+    filter: var(--brightness);
     /* position: realative; */
     width: clamp(150px, 50%, 300px);
     height: clamp(150px, 50%, 300px);
