@@ -344,6 +344,21 @@ select {
     padding: 2px 0 0 0;
 }
 
+@media screen and (max-width:270px) {
+    header {
+        padding: 0px 5px;
+    }
+
+    h1,
+    h3 {
+        margin-left: 0px;
+    }
+
+    .main {
+        margin-bottom: 25px;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width:768px) {
     h1 {
         font-size: var(--h1-to-768px-size);
@@ -449,6 +464,8 @@ select {
         margin-bottom: 50px;
     }
 }
+
+
 
 @media screen and (min-width: 1025px) and (max-width:1200px) {
     h1 {
