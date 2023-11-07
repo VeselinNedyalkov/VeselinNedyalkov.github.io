@@ -1,5 +1,4 @@
 function updateContent() {
-    console.log('test');
     const elementsWithTranslationKey = document.querySelectorAll('[data-translation-key]');
 
     elementsWithTranslationKey.forEach(element => {
