@@ -510,7 +510,7 @@ select {
 
     p {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 32px;
         text-align: left;
         margin-right: 25px;
         margin-bottom: var(--mb-p);
@@ -636,7 +636,7 @@ select {
 
     p {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 32px;
         text-align: left;
         padding: 0 50px 0 0;
         margin-bottom: var(--mb-p);
@@ -764,7 +764,7 @@ select {
 
     p {
         font-size: 22px;
-        line-height: 24px;
+        line-height: 32px;
         text-align: left;
         padding: 0 50px 0 0;
         margin-bottom: var(--mb-p);
